@@ -106,7 +106,17 @@ LAB SETUP INSTRUCTIONS
 
 //import express
 
+const express = require("express");
 
+const app = express();
+
+app.get("/", (req, res) => {
+  res.send("Server is running");
+});
+
+app.listen(3000, () => {
+  console.log("API running at http://localhost:3000");
+});
 // create express app instance to create web server
 
 
