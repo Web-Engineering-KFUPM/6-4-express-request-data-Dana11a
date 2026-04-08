@@ -171,4 +171,5 @@ app.get("/users/:userId", (req, res) => {
 
 // Start the server by listening
 
-
+app.listen(PORT, () => {
+   console.log(`API running at http://localhost:${PORT}`);});
